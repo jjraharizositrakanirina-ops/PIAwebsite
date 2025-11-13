@@ -15,7 +15,7 @@
 .section-title {
     text-align: center;
     margin: 30px 0 18px;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 
@@ -27,6 +27,8 @@
 
 .produit {
     flex: 1 1 300px;
+    box-shadow:gray 2px 2px 8px;
+    border-radius: 8px;
 }
 
 .produit img {
@@ -34,8 +36,12 @@
     height: 260px;
     display: block;
     object-fit: cover;
-    border-radius: 15px;
-    border: solid 2px #bfbfbf;
+    border-radius: 8px 8px 0px 0px;
+    border: solid 2px 2px 0px 0px #bfbfbf;
+}
+.produit:hover {
+    box-shadow: #333 2px 2px 8px;
+    transform: translateY(-4px);
 }
 
 .info {
@@ -59,6 +65,12 @@
     cursor: pointer;
     border-radius: 8px;
 }
+.panier:hover {
+    background-color: #d9ccff;
+    border: 1px solid #94a1ff;
+    transform: translateY(-2px);
+    box-shadow: #333 2px 2px 8px;
+}
 
 .contact-container {
     .contact {
@@ -80,15 +92,16 @@
     .contact textarea {
         padding: 10px;
         border: 1px solid #e6e6e6;
+        border-radius: 15px;
     }
 
-    .envoyer {
+    .Envoyer {
         display: inline-block;
         background: #d9ccff;
         padding: 10px 14px;
         color: #111;
         text-decoration: none;
-        border-radius: 3px;
+        border-radius: 15px;
         border: 0;
         cursor: pointer;
     }
@@ -124,16 +137,20 @@
     border: 0;
     padding: 10px 14px;
     cursor: pointer;
+    border-radius: 22px;
 }
-.boutton :hover {
+.boutton:hover {
     color:black;
     background-color: #fff;
 }
+.contact label:hover {
+    font-size: 18px;
 
+}
 
 @media (max-width: 768px) {
     .tableau-produits {
-        gap: 12px;
+        gap: 13px;
     }
 
     .produit {
@@ -141,8 +158,8 @@
     }
 
     .produit img {
-        width: 75%;
-        height: 75%;
+        width: 100%;
+        height: 100%;
 
     }
 }
