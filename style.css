@@ -335,6 +335,9 @@ a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:#645f5f;
     font-size: 33px;
+    border-bottom: 2px solid #645f5f; 
+    margin-bottom: 30px;
+
 }
 
 .categorie-contenue{
